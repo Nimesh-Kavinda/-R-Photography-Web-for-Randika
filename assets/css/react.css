@@ -1,0 +1,27 @@
+#heart-icon {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.heart-animation {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e0245e;
+    opacity: 0;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-60px); /* Hearts move upwards */
+    }
+}
+
